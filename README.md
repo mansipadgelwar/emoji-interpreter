@@ -1,4 +1,5 @@
 # emoji-interpreter
 
-Created with CodeSandbox
+Created with CodeSandbox.
+
 A ReactJS app to interpret emojis.
