@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import "./styles.css";
 
 const emojiDictionary = {
-  "😊": "Smiling Face",
-  "😂": "Face with tears of joy",
-  "😉": "Winking-Face",
-  "🤩": "Star-Struck",
-  "😗": "Kissing Face",
-  "🤐": "Zipper-Mouth Face",
-  "😯": "hushed face"
+  "🍕": "pizza",
+  "🍔": "burger",
+  "🍟": "french fries",
+  "🌭": "Hot dog",
+  "🍿": "Popcorn",
+  "🥓": "Bacon",
+  "🧇": "Waffles",
+  "🥞": "pancakes",
+  "🥗": "green salad",
+  "🍛": "curry rice",
+  "🥟": "dumpling",
+  "🍝": "spaghetti"
 };
 
 var emojiWeKnow = Object.keys(emojiDictionary);
@@ -29,7 +34,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>Emoji Interpretor</h1>
+      <h1>🍱Food Emoji Interpretor</h1>
       <input onChange={emojiInputHandler}></input>
       <h2>{meaning} </h2>
       <h3>emojis we know</h3>
