@@ -1,4 +1,19 @@
+* {
+  background-color: lightsalmon;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+
+input {
+  border: 2px solid black;
+  height: 4vh;
+  width: 240px;
+  margin: 2rem;
+}
+
+h2 {
+  font-weight: bold;
 }

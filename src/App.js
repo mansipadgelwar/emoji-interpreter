@@ -36,14 +36,14 @@ export default function App() {
     <div className="App">
       <h1>🍱Food Emoji Interpretor</h1>
       <input onChange={emojiInputHandler}></input>
-      <h2>{meaning} </h2>
-      <h3>emojis we know</h3>
+      <h1>{meaning} </h1>
+      <h2>emojis we know</h2>
       {emojiWeKnow.map(function (emoji) {
         return (
           <span
             onClick={() => emojiClickHandler(emoji)}
             key={emoji}
-            style={{ cursor: "pointer", fontSize: "2rem" }}
+            style={{ padding: "0.8rem", cursor: "pointer", fontSize: "2rem" }}
           >
             {" "}
             {emoji}
