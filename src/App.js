@@ -22,12 +22,15 @@ export default function App() {
   function emojiInputHandler(event) {
     var userInput = event.target.value;
     var meaning = emojiDictionary[userInput];
-
-    if (meaning === undefined) {
-      meaning = "emoji undefined in DB";
+    if (userInput in emojiDictionary) {
+      setMeaning(meaning);
+    } else if (userInput === "") {
+      setMeaning("");
+    } else {
+      setMeaning("Emoji not available in database.");
     }
-    setMeaning(meaning);
   }
+
   function emojiClickHandler(emoji) {
     var meaning = emojiDictionary[emoji];
     setMeaning(meaning);
